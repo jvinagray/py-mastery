@@ -1,0 +1,10 @@
+Day 1-
+Python Basics-
+I started off with a fair amount of python knowledge but i want to start from the beginning to really build the foundation.
+i disabled auto complete and copilot for this workspace to really force myself to learn.
+Today ended up being more of a refresher on the basocs then learning but i did learn slicing
+better than i knew it before and actually wrote a bunch of little functions with no autocomplete and had to debug without copilot
+so i still feel like today was a learning experience.
+
+In addition todays project was to build a CLI Temperature Unit Converter so that was fun to
+learn how to use the argparse library.
