@@ -8,3 +8,10 @@ so i still feel like today was a learning experience.
 
 In addition todays project was to build a CLI Temperature Unit Converter so that was fun to
 learn how to use the argparse library.
+
+Day 2- 
+Data Structures in Action-
+Today was a very productive day. I feel like i really grasped python data structures. My foundation is already so much better after
+just two days. I learned list comprehensions which I have never actually used in practice myself but used it over and over to really
+hone that skill. Dictionaries are a huge part of python and are super necessary for ds&a questions like leetcode-style and typical
+coding interview stuff. All in all great day of learning and excited to continue on my journey.
