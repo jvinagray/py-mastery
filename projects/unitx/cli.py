@@ -1,23 +1,7 @@
 from conversions import *
+from errors import ConversionError
 import argparse
 
-units = {
-    "c": ["c", "cel", "celsius"],
-    "f": ["f", "fahrenheit"],
-    "m": ["m", "meter", "meters"],
-    "ft": ["ft", "feet"],
-    "lbs": ["lbs", "pounds"],
-    "kg": ["kg", "kilograms", "kilo"],
-}
-
-convertible_units = [("c", "f"), ("f", "c"), ("ft", "m"), ("m", "ft"), ("kg", "lbs"), ("lbs", "kg")]
-
-def normalize_units(input_unit):
-    input_unit = input_unit.lower()
-    for key, aliases in units.items():
-        if input_unit in aliases:
-            return key
-    return None
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Convert Temperatures, Weight and Length between standard units")
@@ -32,20 +16,10 @@ if __name__ == "__main__":
     if from_unit is None or to_unit is None:
         print("Invalid unit specified!")
         exit(1)
+    try:
+        result = convert(args.value, from_unit, to_unit)
+        print(f"{args.value} {from_unit} = {result:.2f} {to_unit}")
+    except ConversionError as e:
+        print(f"Not a valid conversion. Units not compatible: {e}")
 
-    if (from_unit, to_unit) == ("c", "f"):
-        result = c_to_f(args.value)
-    elif (from_unit, to_unit) == ("f", "c"):
-        result = f_to_c(args.value)
-    elif (from_unit, to_unit) == ("m", "ft"):
-        result = m_to_ft(args.value)
-    elif (from_unit, to_unit) == ("ft", "m"):
-        result = ft_to_m(args.value)
-    elif (from_unit, to_unit) == ("lbs", "kg"):
-        result = lbs_to_kg(args.value)
-    elif (from_unit, to_unit) == ("kg", "lbs"):
-        result = kg_to_lbs(args.value)
-    else:
-        result = "That's not a built in conversion. Please try again!"
-
-    print(result)
+    

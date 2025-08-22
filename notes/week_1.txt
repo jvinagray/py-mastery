@@ -28,3 +28,13 @@ Modules-
 Today I learned all about imports and creating packages. It's amazing when you slow down and read documentation
 how much you realize you glossed over. The practice I did today of creating and importing packages accross
 my repo cannot be understated. I already feel like my programming skills are starting to be real.
+
+Day 5-
+Errors and Exceptions-
+All about error and exception raising and handling. Learned all about the difference. Raising means terminating
+the program and telling the user what happened. Handling means trying to either catch the error and fix it while 
+the program is still running or just gracefully shutting down instead of an ugly error exception. Then I 
+learned about finally and else. Else is what is really part of whatever was goingon in the try block, but
+doesnt need to be in the try block to add more to what can be caught by the exception handling. Finally is
+whatever you want to run no matter if the try works or excepts it will always be the last thingto run and
+it can override a try block return statement. 
