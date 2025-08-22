@@ -22,3 +22,9 @@ WOW! Today is the first day that i actually learned a python concept i had never
 I learned to how by writing a fibonacci sequence and testing how long it takes by caching and not 
 caching and wow what a differnece to do fib(40) without memoization to 6 seconds and with took .00006 
 seconds, unbelievable.
+
+Day 4-
+Modules-
+Today I learned all about imports and creating packages. It's amazing when you slow down and read documentation
+how much you realize you glossed over. The practice I did today of creating and importing packages accross
+my repo cannot be understated. I already feel like my programming skills are starting to be real.
