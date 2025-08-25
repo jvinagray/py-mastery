@@ -1,0 +1,8 @@
+Week 2-
+Day 6-
+File I/O-
+With is preferred for file handling becuase it ensures that the file is closed correctly and is no longer using
+system resources. f.close() also works but with is preferred because its a one shot fix.
+
+The differece betweemn 'a mode and 'w' mode is that w would trubncate a file that existed with that name and start
+clean, a is append and would add to what is already in the file.
